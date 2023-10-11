@@ -1,0 +1,19 @@
+<?php
+$server = 'localhost';
+$userName = "root";
+$pwd = "";
+$db = "econ1";
+
+$conn = mysqli_connect($server, $userName, $pwd, $db);
+if ($conn) {
+    echo "Connected to the $db database successfully";
+    global $conn;
+}
+else {
+    echo "Error : Not connected to the $db database";
+}
+
+
+
+
+?>
